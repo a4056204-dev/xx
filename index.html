@@ -1,0 +1,428 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" Mystic Peony - Mod for Minecraft 1.21.11">
+    <title>Mystic Peony - ModPack for Minecraft</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <img src="Sm2BWkN.png" alt="Mystic Peony" class="logo-img">
+                    <h1>Mystic Peony</h1>
+                </div>
+                <div class="header-controls">
+                    <ul class="nav-links">
+                        <li><a href="#home" data-i18n="nav.home"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="#video" data-i18n="nav.video"><i class="fas fa-video"></i> Video</a></li>
+                        <li><a href="#sobre" data-i18n="nav.about"><i class="fas fa-info-circle"></i> About</a></li>
+                        <li><a href="#download" data-i18n="nav.download"><i class="fas fa-download"></i> Download</a></li>
+                        <li><a href="#fix" data-i18n="nav.fix"><i class="fas fa-cog"></i> Requirements</a></li>
+                    </ul>
+                    <div class="lang-switch" aria-label="Select language">
+                        <button class="lang-btn active" data-lang="en">EN</button>
+                        <button class="lang-btn" data-lang="pt">PT</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2 class="hero-title">Mystic Peony</h2>
+                    <p class="hero-subtitle" data-i18n="hero.subtitle">ModPack "Sakura" for Minecraft servers</p>
+                    <p class="hero-description" data-i18n="hero.description">
+                        Add a new look to your Minecraft server with quality and simplicity. Compatible only with Minecraft 1.21.11.
+                    </p>
+                    <ul class="hero-features">
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="hero.feature1">High-quality graphics with high efficiency.</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="hero.feature2">Minimal FPS and performance impact</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="hero.feature3">Simple and intuitive setup</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-i18n="hero.feature4">Multiplayer server support</span></li>
+                    </ul>
+                    <p class="hero-compatibility" data-i18n="hero.compatibility">Minecraft 1.21.11 • Launcher Loader</p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary" id="downloadModBtn">
+                            <i class="fas fa-download btn-icon"></i>
+                            <span data-i18n="hero.cta">Baixar MysticPeony Mod</span>
+                        </button>
+                        <a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/6311635" target="_blank" rel="noopener noreferrer" class="btn-fabric-api">
+                            <i class="fas fa-cube btn-icon"></i>
+                            <span data-i18n="hero.fabricApi">Fabric API</span>
+                        </a>
+                    </div>
+                    <p class="btn-microtext" data-i18n="hero.downloadNote">Baixe o mod e acesse o site oficial do Fabric para baixar o Fabric API</p>
+                </div>
+                <div class="hero-visual">
+                    <img src="https://eobr9qqle4.ufs.sh/f/0k5Cixrj8sI5XL26h5HAf4FM5TZVI3YkOCLW8amgchrXuQRJ" alt="Dois jogadores usando MysticPeony para comunicação por voz" class="hero-image">
+                </div>
+            </div>
+        </section>
+
+        <section class="proximity-showcase">
+            <div class="container">
+                <div class="proximity-content">
+                    <div class="proximity-text">
+                        <h2 class="proximity-title">Graphics For Mystic Peony</h2>
+                        <p class="proximity-description">
+                            Experience realistic graphics and sound effects in the "Sakura" version, creating an immersive and realistic multiplayer experience.
+                        </p>
+                    </div>
+                    <div class="proximity-visual-wrapper">
+                        <div class="showcase-visual">
+                            <div class="proximity-ring ring-1"></div>
+                            <div class="proximity-ring ring-2"></div>
+                            <div class="proximity-ring ring-3"></div>
+
+                            <div class="player-center">
+                                <i class="fas fa-user"></i>
+                                <div class="player-icon microphone-icon">
+                                    <i class="fas fa-microphone"></i>
+                                </div>
+                            </div>
+
+                            <div class="player-right">
+                                <i class="fas fa-user"></i>
+                                <div class="player-icon speaker-icon">
+                                    <i class="fas fa-volume-up"></i>
+                                </div>
+                                <div class="proximity-ring ring-right"></div>
+                            </div>
+
+                            <div class="waveform">
+                                <div class="wave-bar"></div>
+                                <div class="wave-bar"></div>
+                                <div class="wave-bar"></div>
+                                <div class="wave-bar"></div>
+                                <div class="wave-bar"></div>
+                                <div class="wave-bar"></div>
+                                <div class="wave-bar"></div>
+                                <span class="waveform-label">Speaking...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="video" class="video-section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="video.title"></h2>
+                <div class="video-container">
+                    <video class="demo-video" id="demoVideo" loop="" playsinline="" preload="auto">
+                        <source src="https://eobr9qqle4.ufs.sh/f/0k5Cixrj8sI5cR4Pid6sgSLGZF5I29l4JNorbECAemwpOvnk" type="video/mp4">
+                        Your browser does not support video playback.
+                    </video>
+                    <div class="video-overlay">
+                        <button class="video-play-btn" id="videoPlayBtn">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                    <div class="video-controls">
+                        <button class="video-control-btn" id="playPauseBtn">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <div class="video-progress-container">
+                            <div class="video-progress-bar">
+                                <div class="video-progress-filled" id="videoProgress"></div>
+                                <div class="video-progress-handle" id="videoHandle"></div>
+                            </div>
+                        </div>
+                        <div class="video-time">
+                            <span id="currentTime">0:00</span>
+                            <span>/</span>
+                            <span id="totalTime">0:00</span>
+                        </div>
+                        <div class="video-volume-container">
+                            <button class="video-control-btn" id="muteBtn">
+                                <i class="fas fa-volume-up"></i>
+                            </button>
+                            <div class="video-volume-bar">
+                                <div class="video-volume-filled" id="volumeProgress"></div>
+                                <div class="video-volume-handle" id="volumeHandle"></div>
+                            </div>
+                        </div>
+                        <button class="video-control-btn" id="fullscreenBtn">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+                <p class="video-caption" data-i18n="video.caption">
+                    Demonstração completa do Echo VoiceMod em ação: veja como os jogadores se comunicam em tempo real durante uma partida multiplayer. O vídeo mostra a qualidade do áudio, a facilidade de uso e como o sistema de proximidade funciona, permitindo que apenas jogadores próximos se ouçam, criando uma experiência mais imersiva e realista.
+                </p>
+            </div>
+        </section>
+
+        <section id="sobre" class="about">
+            <div class="container">
+                <h2 class="section-title" data-i18n="about.title">Sobre o Echo VoiceMod</h2>
+                <div class="about-content">
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                        <h3 data-i18n="about.install.title">Instalação</h3>
+                        <p data-i18n="about.install.text">
+                            Baixe o Fabric API e o Echo VoiceMod. Copie ambos os arquivos .jar para a pasta "mods" do Minecraft. Reinicie o jogo e pronto!
+                        </p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-volume-up"></i>
+                        </div>
+                        <h3 data-i18n="about.codec.title">Áudio de Alta Qualidade</h3>
+                        <p data-i18n="about.codec.text">
+                            Codec Opus para transmissão de áudio em tempo real com qualidade cristalina.
+                        </p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3 data-i18n="about.performance.title">Performance</h3>
+                        <p data-i18n="about.performance.text">
+                            Impacto mínimo no FPS. Processamento otimizado.
+                        </p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 data-i18n="about.multiplayer.title">Multiplayer</h3>
+                        <p data-i18n="about.multiplayer.text">
+                            Suporte para servidores dedicados e LAN. Sistema de proximidade.
+                        </p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 data-i18n="about.security.title">Segurança</h3>
+                        <p data-i18n="about.security.text">
+                            Áudio criptografado end-to-end. Comunicação direta entre jogadores.
+                        </p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <h3 data-i18n="about.updates.title">Atualizações</h3>
+                        <p data-i18n="about.updates.text">
+                            Atualizações regulares com melhorias e correções.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="download" class="download">
+            <div class="container">
+                <h2 class="section-title" data-i18n="plans.title">Plans</h2>
+                
+                <div class="plans-grid">
+                    <div class="plan-card plan-free-card" style="opacity: 1; transform: translateY(0px); transition: 0.6s ease-out;">
+                        <div class="plan-icon-wrapper">
+                            <i class="fas fa-gift plan-icon"></i>
+                        </div>
+                        <div class="plan-header">
+                            <h3 data-i18n="plans.free.title">Free</h3>
+                        </div>
+                        <p class="plan-subtitle" data-i18n="plans.free.subtitle">Minecraft 1.21.11 • Fabric</p>
+                        
+                        <div class="invite-code-section">
+                            <label for="inviteCode" class="invite-code-label" data-i18n="plans.free.inviteLabel">Enter invite code (30 days access)</label>
+                            <div class="invite-code-wrapper">
+                                <input 
+                                    type="text" 
+                                    id="inviteCode" 
+                                    class="invite-code-input" 
+                                    placeholder="Enter code"
+                                    data-i18n-placeholder="plans.free.invitePlaceholder"
+                                />
+                                <button class="invite-code-btn" id="validateInviteBtn" aria-label="Validate code">
+                                    <i class="fas fa-check"></i>
+                                </button>
+                            </div>
+                            <p class="invite-code-message" id="inviteMessage"></p>
+                        </div>
+                        
+                        <ul class="plan-features">
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="plans.free.feature1">Full mod</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="plans.free.feature2">Basic ModPack</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="plans.free.feature3">Multiplayer support</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="plans.free.feature4">Regular updates</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="plans.free.feature5">Community support</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="plans.free.feature6">Easy installation</span></li>
+                        </ul>
+                        
+                        <button class="btn-plan btn-plan-free" data-plan="free" id="downloadFreeBtn" disabled>
+                            <i class="fas fa-download"></i>
+                            <span data-i18n="plans.free.button">Download</span>
+                        </button>
+                        
+                        <p class="plan-file-info">
+                            <i class="fas fa-file-archive"></i>
+                            MysticPeonyBeta-1.0.0.jar
+                        </p>
+                    </div>
+
+                    <div class="plan-card plan-featured plan-premium-card" style="opacity: 1; transform: translateY(0px); transition: 0.6s ease-out;">
+                        <div class="plan-badge" data-i18n="plans.premium.badge">Recommended</div>
+                        <div class="plan-icon-wrapper plan-icon-premium">
+                            <i class="fas fa-crown plan-icon"></i>
+                        </div>
+                        <div class="plan-header">
+                            <h3 data-i18n="plans.premium.title">Premium</h3>
+                            <p class="plan-price" id="premiumPrice">
+                                <span class="plan-price-amount">$10</span>
+                                <span id="premiumPeriod" class="plan-price-period">/month</span>
+                            </p>
+                        </div>
+                        <p class="plan-subtitle" data-i18n="plans.premium.subtitle">Minecraft 1.21.11 • Fabric</p>
+                        
+                        <div class="plan-period-selector">
+                            <button class="period-btn active" data-period="monthly" data-price="10" data-i18n="plans.premium.monthly">Monthly</button>
+                            <button class="period-btn" data-period="quarterly" data-price="27" data-i18n="plans.premium.quarterly">Quarterly</button>
+                            <button class="period-btn" data-period="yearly" data-price="100" data-i18n="plans.premium.yearly">Yearly</button>
+                        </div>
+                        
+                        <ul class="plan-features">
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="plans.premium.feature1">Full mod</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="plans.premium.feature2">Advanced ModPack</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="plans.premium.feature3">Priority support</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="plans.premium.feature4">Early access to updates</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="plans.premium.feature5">Exclusive features</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-i18n="plans.premium.feature6">Premium support channel</span></li>
+                        </ul>
+                        
+                        <button class="btn-plan btn-plan-paid" data-plan="premium" id="premiumBtn">
+                            <i class="fas fa-rocket"></i>
+                            <span data-i18n="plans.premium.button">Subscribe</span>
+                        </button>
+                        
+                        <p class="plan-file-info" data-i18n="plans.premium.file">Access via dashboard</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="fix" class="fix-section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="fix.title">Solução de Problemas</h2>
+                <p class="section-description" data-i18n="fix.description">
+                    Se o Echo VoiceMod não estiver funcionando corretamente após a instalação, você pode estar enfrentando um problema de compatibilidade com o Fabric API. Use o Fabric API FIX para resolver problemas comuns e fazer o mod funcionar perfeitamente.
+                </p>
+
+                <div class="fix-content">
+                    <div class="fix-card">
+                        <div class="fix-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h3 data-i18n="fix.problem.title">Problemas Comuns</h3>
+                        <ul class="fix-list">
+                            <li><i class="fas fa-exclamation-circle"></i> <span data-i18n="fix.problem.item1">O mod não carrega ao iniciar o Minecraft</span></li>
+                            <li><i class="fas fa-exclamation-circle"></i> <span data-i18n="fix.problem.item2">Erros relacionados ao Fabric API no console</span></li>
+                            <li><i class="fas fa-exclamation-circle"></i> <span data-i18n="fix.problem.item3">O jogo fecha inesperadamente (crash)</span></li>
+                            <li><i class="fas fa-exclamation-circle"></i> <span data-i18n="fix.problem.item4">Mensagens de erro sobre dependências faltando</span></li>
+                            <li><i class="fas fa-exclamation-circle"></i> <span data-i18n="fix.problem.item5">O voicechat não aparece no jogo</span></li>
+                            <li><i class="fas fa-exclamation-circle"></i> <span data-i18n="fix.problem.item6">Conflitos entre mods</span></li>
+                        </ul>
+                        
+                        <div class="fix-instructions">
+                            <h4 data-i18n="fix.problem.tipsTitle">Quick Tips:</h4>
+                            <ol class="fix-steps">
+                                <li data-i18n="fix.problem.tip1">Verifique se está usando Minecraft 1.21.11</li>
+                                <li data-i18n="fix.problem.tip2">Confirme que o Fabric está instalado</li>
+                                <li data-i18n="fix.problem.tip3">Verifique os logs do console para erros</li>
+                                <li data-i18n="fix.problem.tip4">Remova outros mods para testar isoladamente</li>
+                                <li data-i18n="fix.problem.tip5">Use o Fabric API FIX para resolver problemas</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="fix-card fix-card-solution">
+                        <div class="fix-icon fix-icon-success">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3 data-i18n="fix.solution.title">Solução: Fabric API FIX</h3>
+                        <p class="fix-solution-text" data-i18n="fix.solution.description">
+                            O Fabric API FIX é uma versão corrigida e otimizada do Fabric API que resolve problemas de compatibilidade e conflitos comuns. Esta versão foi especialmente testada e validada para funcionar perfeitamente com o Echo VoiceMod, garantindo que todos os recursos funcionem corretamente.
+                        </p>
+                        <div class="fix-info">
+                            <div class="fix-info-item">
+                                <i class="fas fa-check"></i>
+                                <span data-i18n="fix.solution.feature1">Versão corrigida e testada</span>
+                            </div>
+                            <div class="fix-info-item">
+                                <i class="fas fa-check"></i>
+                                <span data-i18n="fix.solution.feature2">Compatibilidade garantida com Echo VoiceMod</span>
+                            </div>
+                            <div class="fix-info-item">
+                                <i class="fas fa-check"></i>
+                                <span data-i18n="fix.solution.feature3">Resolve conflitos de dependências</span>
+                            </div>
+                            <div class="fix-info-item">
+                                <i class="fas fa-check"></i>
+                                <span data-i18n="fix.solution.feature4">Instalação simples e rápida</span>
+                            </div>
+                        </div>
+                        <div class="fix-instructions">
+                            <h4 data-i18n="fix.instructions.title">Como Instalar:</h4>
+                            <ol class="fix-steps">
+                                <li data-i18n="fix.instructions.step1">Remove the old Fabric API from the mods folder (if present)</li>
+                                <li data-i18n="fix.instructions.step2">Download Fabric API FIX using the button below</li>
+                                <li data-i18n="fix.instructions.step3">Copy the .jar file to Minecraft's mods folder</li>
+                                <li data-i18n="fix.instructions.step4">Make sure Voice perception is also in the mods folder</li>
+                                <li data-i18n="fix.instructions.step5">Restart Minecraft and test the mod</li>
+                            </ol>
+                        </div>
+                        <button class="btn-fix-download" id="downloadFixBtn" >
+                            <i class="fas fa-download btn-icon"></i>
+                            <span data-i18n="fix.download.button" >Baixar Fabric API FIX</span>
+                        </button>
+                        <p class="fix-version" data-i18n="fix.download.version">Versão: 0.116.7+1.21.11 FIX • Compatível com Minecraft 1.21.11</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 MysticPeony</p>
+            <p class="footer-note" data-i18n="footer.note">Independent project• Not affiliated  with Mojang Studios</p>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="paymentModal">
+        <div class="modal-container">
+            <div class="modal-icon">
+                <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <h3 class="modal-title" data-i18n="modal.payment.title">Sistema de Pagamentos Temporariamente Indisponível</h3>
+            <p class="modal-description" data-i18n="modal.payment.description">
+                Estamos enfrentando problemas técnicos em nosso sistema de pagamentos no momento. Nossa equipe está trabalhando para resolver isso o mais rápido possível.
+            </p>
+            <p class="modal-info" data-i18n="modal.payment.info">
+                Por favor, tente novamente mais tarde ou entre em contato conosco se precisar de assistência.
+            </p>
+            <button class="modal-close-btn" id="closePaymentModal">
+                <i class="fas fa-times"></i>
+                <span data-i18n="modal.payment.close">Fechar</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+
+
+</body></html>
